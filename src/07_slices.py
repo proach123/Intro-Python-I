@@ -24,10 +24,10 @@ print(a[-3:])
 print(a[2:-2])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print(a[1::])
+print(a[1:])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print(a[:-1:])
+print(a[:-1])
 
 # For string s...
 

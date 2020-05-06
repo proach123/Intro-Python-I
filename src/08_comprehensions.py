@@ -12,6 +12,8 @@ for more info regarding list comprehensions.
 
 y = []
 
+y = [x+1 for x in range(5)]
+
 print (y)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
@@ -19,6 +21,7 @@ print (y)
 
 y = []
 
+y = [x**3 for x in range(10)]
 print(y)
 
 # Write a list comprehension to produce the uppercase version of all the
@@ -26,7 +29,7 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [x.upper() for x in a]
 
 print(y)
 
@@ -37,5 +40,9 @@ x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
 y = []
+
+y = [q for q in x if int(q) % 2 == 0]
+
+
 
 print(y)
