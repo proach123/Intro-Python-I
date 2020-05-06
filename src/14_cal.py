@@ -30,3 +30,16 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+def cal(year=2020, month=5):
+  c = calendar.TextCalendar(calendar.SUNDAY)
+  dis = c.formatmonth(year, month)
+  print(dis)
+
+x = sys.argv
+x.pop(0)
+
+cal(int(x[0]),int(x[1]))
+
+#nailed it

@@ -10,6 +10,20 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+import os
+
+print("1" , os.getcwd())
+
+os.chdir("/Users/patri/Desktop/python/firstDay/Intro-Python-I/src")
+
+print("2" , os.getcwd())
+
+file = open('foo.txt', 'r')
+
+read_data = file.read()
+
+print(read_data)
+file.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +31,15 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+w = open("bar.txt", "w+")
+
+for i in range(3):
+    w.write("please work")
+
+w.close()
+
+
+w = open("bar.txt", "r")
+read_data = w.read()
+print(read_data)
